@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Doctors - MedPulse</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Med<strong>Pulse</strong></span>
+      </div>
+
+      <!-- डेस्कटॉपसाठी मेनू -->
+      <nav class="nav-links desktop-nav">
+        <a href="index.html" >Home</a>
+        <a href="doctors.html" class="active">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="appointment.html" class="btn-primary">Book Appointment</a>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <span class="badge"
+        ><i class="fa-solid fa-user-doctor"></i> Specialist Team</span
+      >
+      <h1>Meet Our Expert Medical Specialists</h1>
+      <p>
+        Our team of highly qualified doctors and surgeons are dedicated to
+        providing world-class healthcare services.
+      </p>
+    </section>
+
+    <!-- Search & Filter Bar -->
+    <section class="doctor-filter-section">
+      <div class="filter-container">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search doctor by name or specialty..."
+          />
+        </div>
+        <div class="filter-dropdowns">
+          <select>
+            <option value="">All Departments</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Pediatrics</option>
+            <option>Orthopedics</option>
+          </select>
+          <select>
+            <option value="">Availability</option>
+            <option>Available Today</option>
+            <option>This Week</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctors Grid Section -->
+    <section class="doctors-section">
+      <div class="doctors-grid">
+        <!-- Doctor Card 1 -->
+        <div class="doctor-card">
+          <div class="doctor-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400"
+              alt="Dr. Sarah Jenkins"
+            />
+            <span class="status-badge available"
+              ><i class="fa-solid fa-circle"></i> Available Today</span
+            >
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Cardiologist</span>
+            <h3>Dr. Sarah Jenkins</h3>
+            <p class="qualification">MD, FACC - Senior Cardiology Specialist</p>
+            <div class="doctor-meta">
+              <span><i class="fa-solid fa-briefcase"></i> 12+ Yrs Exp.</span>
+              <span><i class="fa-solid fa-star"></i> 4.9 (120 Reviews)</span>
+            </div>
+            <div class="card-actions">
+              <a href="appointment.html" class="btn-primary btn-sm"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor Card 2 -->
+        <div class="doctor-card">
+          <div class="doctor-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400"
+              alt="Dr. Alex Mercer"
+            />
+            <span class="status-badge busy"
+              ><i class="fa-solid fa-circle"></i> In Surgery</span
+            >
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Neurologist</span>
+            <h3>Dr. Alex Mercer</h3>
+            <p class="qualification">MBBS, DM (Neurology) - Brain Specialist</p>
+            <div class="doctor-meta">
+              <span><i class="fa-solid fa-briefcase"></i> 15+ Yrs Exp.</span>
+              <span><i class="fa-solid fa-star"></i> 4.8 (98 Reviews)</span>
+            </div>
+            <div class="card-actions">
+              <a href="appointment.html" class="btn-primary btn-sm"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor Card 3 -->
+        <div class="doctor-card">
+          <div class="doctor-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1594824813566-7885a3978070?auto=format&fit=crop&q=80&w=400"
+              alt="Dr. Elena Rostova"
+            />
+            <span class="status-badge available"
+              ><i class="fa-solid fa-circle"></i> Available Today</span
+            >
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Pediatrician</span>
+            <h3>Dr. Elena Rostova</h3>
+            <p class="qualification">MD (Pediatrics) - Child Care Specialist</p>
+            <div class="doctor-meta">
+              <span><i class="fa-solid fa-briefcase"></i> 9+ Yrs Exp.</span>
+              <span><i class="fa-solid fa-star"></i> 5.0 (150 Reviews)</span>
+            </div>
+            <div class="card-actions">
+              <a href="appointment.html" class="btn-primary btn-sm"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor Card 4 -->
+        <div class="doctor-card">
+          <div class="doctor-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400"
+              alt="Dr. Rajesh Sharma"
+            />
+            <span class="status-badge available"
+              ><i class="fa-solid fa-circle"></i> Available Today</span
+            >
+          </div>
+          <div class="doctor-info">
+            <span class="specialty-tag">Orthopedic</span>
+            <h3>Dr. Rajesh Sharma</h3>
+            <p class="qualification">MS (Ortho) - Joint & Bone Specialist</p>
+            <div class="doctor-meta">
+              <span><i class="fa-solid fa-briefcase"></i> 14+ Yrs Exp.</span>
+              <span><i class="fa-solid fa-star"></i> 4.9 (110 Reviews)</span>
+            </div>
+            <div class="card-actions">
+              <a href="appointment.html" class="btn-primary btn-sm"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Med<strong>Pulse</strong></span>
+          </div>
+          <p>
+            Providing world-class medical facilities and digital healthcare
+            portal systems.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Emergency</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency Contact</h4>
+          <p><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> emergency@medpulse.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 MedPulse Hospital Management System. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Med<strong>Pulse</strong></span>
+          </div>
+          <p>
+            Providing world-class medical facilities and digital healthcare
+            portal systems.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">24/7 Emergency Care</a></li>
+            <li><a href="#">Advanced Diagnostics</a></li>
+            <li><a href="#">ICU & Critical Care</a></li>
+            <li><a href="#">Laparoscopic Surgery </a></li>
+            <li><a href="#">In-House Pharmacy</a></li>
+            <li><a href="#">Preventive Health Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency Contact</h4>
+          <p><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> emergency@medpulse.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Maharashtra, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 MedPulse Hospital Management System. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+      <a href="index.html" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="doctors.html">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Doctors</span>
+      </a>
+      <a href="services.html">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span>Services</span>
+      </a>
+      <a href="departments.html">
+        <i class="fa-solid fa-sitemap"></i>
+        <span>Depts</span>
+      </a>
+      <a href="contact.html">
+        <i class="fa-solid fa-headset"></i>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <!-- Theme Toggle JS Script -->
+    <script src="javascript.js"></script>
+  </body>
+</html>

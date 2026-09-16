@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24/7 Emergency Care - MedPulse</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Med<strong>Pulse</strong></span>
+      </div>
+
+      <!-- डेस्कटॉपसाठी मेनू -->
+      <nav class="nav-links desktop-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="tel:+18001234567" class="btn-emergency-nav"
+          ><i class="fa-solid fa-phone-volume"></i> Call 102 / Emergency</a
+        >
+      </div>
+    </header>
+
+    <!-- Emergency Hero Section -->
+    <section class="emergency-hero">
+      <div class="emergency-hero-content">
+        <span class="emergency-badge"
+          ><i class="fa-solid fa-truck-medical"></i> 24/7 Rapid Care Unit</span
+        >
+        <h1>Immediate Medical Assistance & Trauma Care</h1>
+        <p>
+          Minutes matter in critical conditions. Our Level-1 Trauma team and
+          advanced ICU ambulances are available round-the-clock.
+        </p>
+
+        <div class="emergency-call-card">
+          <div class="call-icon">
+            <i class="fa-solid fa-phone-flip"></i>
+          </div>
+          <div class="call-details">
+            <span>24/7 Toll-Free Hotline</span>
+            <h2>+1 (800) 123-4567</h2>
+          </div>
+          <a href="tel:+18001234567" class="btn-call-now">Call Hotline Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Ambulance Request Form Section -->
+    <section class="ambulance-section">
+      <div class="ambulance-card">
+        <h3>
+          <i class="fa-solid fa-truck-fast"></i> Instant Ambulance Dispatch
+          Request
+        </h3>
+        <p>
+          Request an ICU-equipped ambulance to your current location
+          immediately.
+        </p>
+
+        <form class="ambulance-form">
+          <div class="form-row">
+            <div class="input-group">
+              <label
+                ><i class="fa-solid fa-user"></i> Patient / Caller Name</label
+              >
+              <input type="text" placeholder="Enter full name" required />
+            </div>
+            <div class="input-group">
+              <label><i class="fa-solid fa-phone"></i> Contact Number</label>
+              <input type="tel" placeholder="+1 234 567 890" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label
+                ><i class="fa-solid fa-location-dot"></i> Pickup Address / GPS
+                Location</label
+              >
+              <input
+                type="text"
+                placeholder="Enter landmark or current address"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label
+                ><i class="fa-solid fa-notes-medical"></i> Type of
+                Emergency</label
+              >
+              <select required>
+                <option value="">Select Emergency Type</option>
+                <option>Cardiac Arrest / Chest Pain</option>
+                <option>Accident / Trauma Injury</option>
+                <option>Stroke / Unconsciousness</option>
+                <option>Severe Breathing Difficulty</option>
+                <option>Pregnancy Emergency</option>
+                <option>Other Critical Condition</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-dispatch">
+            <i class="fa-solid fa-paper-plane"></i> Dispatch Ambulance Now
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Emergency Services Breakdown -->
+    <section class="emergency-services">
+      <div class="section-title">
+        <span>Critical Care Standards</span>
+        <h2>Our Emergency Capabilities</h2>
+      </div>
+
+      <div class="emergency-grid">
+        <div class="em-card">
+          <div class="em-icon">
+            <i class="fa-solid fa-heart-circle-bolt"></i>
+          </div>
+          <h3>Cardiac Emergency Care</h3>
+          <p>
+            24/7 Cath-Lab readiness for primary angioplasty during heart
+            attacks, supported by senior cardiologists.
+          </p>
+        </div>
+
+        <div class="em-card">
+          <div class="em-icon"><i class="fa-solid fa-car-burst"></i></div>
+          <h3>Level-1 Trauma Center</h3>
+          <p>
+            Expert surgical intervention for road accidents, severe burns,
+            fractures, and severe physical trauma.
+          </p>
+        </div>
+
+        <div class="em-card">
+          <div class="em-icon"><i class="fa-solid fa-kit-medical"></i></div>
+          <h3>ICU On Wheels</h3>
+          <p>
+            Ambulances fitted with ventilators, defibrillators, oxygen support,
+            and trained paramedics on board.
+          </p>
+        </div>
+
+        <div class="em-card">
+          <div class="em-icon"><i class="fa-solid fa-vials"></i></div>
+          <h3>Express Diagnostics</h3>
+          <p>
+            Priority STAT Lab testing and emergency CT / MRI scans with
+            immediate report delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Med<strong>Pulse</strong></span>
+          </div>
+          <p>
+            Providing world-class medical facilities and digital healthcare
+            portal systems.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">24/7 Emergency Care</a></li>
+            <li><a href="#">Advanced Diagnostics</a></li>
+            <li><a href="#">ICU & Critical Care</a></li>
+            <li><a href="#">Laparoscopic Surgery </a></li>
+            <li><a href="#">In-House Pharmacy</a></li>
+            <li><a href="#">Preventive Health Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency Contact</h4>
+          <p><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> emergency@medpulse.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Maharashtra, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 MedPulse Hospital Management System. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+      <a href="index.html" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="doctors.html">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Doctors</span>
+      </a>
+      <a href="services.html">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span>Services</span>
+      </a>
+      <a href="departments.html">
+        <i class="fa-solid fa-sitemap"></i>
+        <span>Depts</span>
+      </a>
+      <a href="contact.html">
+        <i class="fa-solid fa-headset"></i>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <!-- Theme Toggle JS -->
+    <script src="javascript.js"></script>
+  </body>
+</html>

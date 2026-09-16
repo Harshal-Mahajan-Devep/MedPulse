@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Services - MedPulse</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Med<strong>Pulse</strong></span>
+      </div>
+
+      <!-- डेस्कटॉपसाठी मेनू -->
+      <nav class="nav-links desktop-nav">
+        <a href="index.html" >Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="appointment.html" class="btn-primary">Book Appointment</a>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <span class="badge"
+        ><i class="fa-solid fa-notes-medical"></i> High-Quality Care</span
+      >
+      <h1>Comprehensive Healthcare & Medical Services</h1>
+      <p>
+        Offering advanced diagnosis, emergency response, specialized surgical
+        operations, and 24/7 critical patient care.
+      </p>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-page-section">
+      <div class="services-detailed-grid">
+        <!-- Service Card 1 -->
+        <div class="service-detail-card">
+          <div class="service-header">
+            <div class="icon-box">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3>24/7 Emergency Care</h3>
+          </div>
+          <p>
+            Fully equipped trauma response units, fast ambulance dispatches, and
+            round-the-clock emergency medical specialists.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Immediate ICU Admission</li>
+            <li><i class="fa-solid fa-check"></i> Cardiac Emergency Support</li>
+            <li><i class="fa-solid fa-check"></i> Rapid Ambulance Service</li>
+          </ul>
+          <a href="appointment.html" class="btn-outline btn-sm"
+            >Get Assistance</a
+          >
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-detail-card">
+          <div class="service-header">
+            <div class="icon-box"><i class="fa-solid fa-vial-virus"></i></div>
+            <h3>Advanced Diagnostics</h3>
+            <span class="tag">Digital Lab</span>
+          </div>
+          <p>
+            State-of-the-art pathology laboratory and imaging technologies for
+            accurate and speedy health report assessments.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> High-Speed MRI & CT Scan</li>
+            <li><i class="fa-solid fa-check"></i> Full Body Health Checkups</li>
+            <li>
+              <i class="fa-solid fa-check"></i> Digital X-Ray & Ultrasound
+            </li>
+          </ul>
+          <a href="appointment.html" class="btn-outline btn-sm">Book Test</a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-detail-card">
+          <div class="service-header">
+            <div class="icon-box"><i class="fa-solid fa-bed-pulse"></i></div>
+            <h3>ICU & Critical Care</h3>
+          </div>
+          <p>
+            Advanced Intensive Care Unit monitored by multi-disciplinary experts
+            and equipped with ventilators and life-support systems.
+          </p>
+          <ul class="service-features">
+            <li>
+              <i class="fa-solid fa-check"></i> Continuous Vital Monitoring
+            </li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Nursing Staff</li>
+            <li>
+              <i class="fa-solid fa-check"></i> Specialized Infection Control
+            </li>
+          </ul>
+          <a href="appointment.html" class="btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-detail-card">
+          <div class="service-header">
+            <div class="icon-box"><i class="fa-solid fa-user-nurse"></i></div>
+            <h3>Laparoscopic Surgery</h3>
+          </div>
+          <p>
+            Minimally invasive surgical procedures ensuring quicker recovery,
+            smaller incisions, and minimal post-operation discomfort.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Modern Operation Theatres</li>
+            <li>
+              <i class="fa-solid fa-check"></i> Expert Laparoscopic Surgeons
+            </li>
+            <li><i class="fa-solid fa-check"></i> Fast Recovery Protocols</li>
+          </ul>
+          <a href="appointment.html" class="btn-outline btn-sm"
+            >Consult Surgeon</a
+          >
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-detail-card">
+          <div class="service-header">
+            <div class="icon-box"><i class="fa-solid fa-pills"></i></div>
+            <h3>In-House Pharmacy</h3>
+          </div>
+          <p>
+            24/7 fully stocked medical pharmacy delivering genuine prescription
+            medicines, healthcare products, and surgical supplies.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> 100% Authentic Medicines</li>
+            <li><i class="fa-solid fa-check"></i> Home Delivery Options</li>
+            <li>
+              <i class="fa-solid fa-check"></i> Discounted Healthcare Kits
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-outline btn-sm">Contact Pharmacy</a>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-detail-card">
+          <div class="service-header">
+            <div class="icon-box"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>Preventive Health Care</h3>
+          </div>
+          <p>
+            Customized health checkup packages, vaccination drives, and wellness
+            consultations tailored for all age groups.
+          </p>
+          <ul class="service-features">
+            <li>
+              <i class="fa-solid fa-check"></i> Executive Health Screening
+            </li>
+            <li><i class="fa-solid fa-check"></i> Pediatric Immunization</li>
+            <li><i class="fa-solid fa-check"></i> Diabetes Management</li>
+          </ul>
+          <a href="appointment.html" class="btn-outline btn-sm"
+            >Explore Packages</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us CTA Box -->
+    <section class="cta-banner-section">
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2>Need Specialized Medical Consultation?</h2>
+          <p>
+            Schedule a visit or video consultation with our top specialists
+            today.
+          </p>
+        </div>
+        <div class="cta-btn">
+          <a href="appointment.html" class="btn-primary"
+            ><i class="fa-solid fa-calendar-plus"></i> Book Consultation</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Med<strong>Pulse</strong></span>
+          </div>
+          <p>
+            Providing world-class medical facilities and digital healthcare
+            portal systems.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">24/7 Emergency Care</a></li>
+            <li><a href="#">Advanced Diagnostics</a></li>
+            <li><a href="#">ICU & Critical Care</a></li>
+            <li><a href="#">Laparoscopic Surgery </a></li>
+            <li><a href="#">In-House Pharmacy</a></li>
+            <li><a href="#">Preventive Health Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency Contact</h4>
+          <p><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> emergency@medpulse.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Maharashtra, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 MedPulse Hospital Management System. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Theme Toggle JS -->
+    <script src="javascript.js"></script>
+  </body>
+</html>

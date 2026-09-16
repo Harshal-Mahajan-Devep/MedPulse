@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Portal - MedPulse</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Med<strong>Pulse</strong></span>
+      </div>
+
+      <!-- डेस्कटॉपसाठी मेनू -->
+      <nav class="nav-links desktop-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="appointment.html" class="btn-primary">Book Appointment</a>
+      </div>
+    </header>
+
+    <!-- Doctor Portal Dashboard Section -->
+    <section class="portal-section">
+      <div class="portal-container">
+        <!-- Sidebar Navigation -->
+        <aside class="portal-sidebar">
+          <div class="doctor-profile-card">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400"
+              alt="Dr. Sarah Jenkins"
+            />
+            <h3>Dr. Sarah Jenkins</h3>
+            <p>Senior Cardiologist</p>
+            <span class="status-online"
+              ><i class="fa-solid fa-circle"></i> On Duty</span
+            >
+          </div>
+
+          <ul class="portal-menu">
+            <li class="active">
+              <a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-calendar-check"></i> Appointments</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-hospital-user"></i> Patient Records</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-file-prescription"></i> Prescriptions</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-clock"></i> Duty Schedule</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+            </li>
+          </ul>
+
+          <button class="btn-logout">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+          </button>
+        </aside>
+
+        <!-- Main Portal Dashboard Content -->
+        <main class="portal-main">
+          <div class="portal-header">
+            <div>
+              <h2>Doctor Dashboard</h2>
+              <p>Welcome back, Dr. Jenkins! Here is your schedule for today.</p>
+            </div>
+            <div class="date-badge">
+              <i class="fa-solid fa-calendar-day"></i> Today: Aug 10, 2026
+            </div>
+          </div>
+
+          <!-- Stats Overview -->
+          <div class="portal-stats-grid">
+            <div class="p-stat-card">
+              <div class="p-stat-icon"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <h3>18</h3>
+                <p>Total Patients Today</p>
+              </div>
+            </div>
+
+            <div class="p-stat-card">
+              <div class="p-stat-icon warning">
+                <i class="fa-solid fa-hourglass-half"></i>
+              </div>
+              <div>
+                <h3>5</h3>
+                <p>Pending Appointments</p>
+              </div>
+            </div>
+
+            <div class="p-stat-card">
+              <div class="p-stat-icon success">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                <h3>11</h3>
+                <p>Completed Visits</p>
+              </div>
+            </div>
+
+            <div class="p-stat-card">
+              <div class="p-stat-icon danger">
+                <i class="fa-solid fa-truck-medical"></i>
+              </div>
+              <div>
+                <h3>2</h3>
+                <p>Emergency Alerts</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Today's Appointment Queue Table -->
+          <div class="portal-table-card">
+            <div class="table-header">
+              <h3>
+                <i class="fa-solid fa-list-check"></i> Today's Patient Queue
+              </h3>
+              <button class="btn-primary btn-xs">
+                <i class="fa-solid fa-plus"></i> Add Walk-in Patient
+              </button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="portal-table">
+                <thead>
+                  <tr>
+                    <th>Token</th>
+                    <th>Patient Name</th>
+                    <th>Age/Gender</th>
+                    <th>Time Slot</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>#T-101</strong></td>
+                    <td>Rahul Sharma</td>
+                    <td>34 / Male</td>
+                    <td>09:30 AM</td>
+                    <td>Follow-up</td>
+                    <td>
+                      <span class="badge-status completed">Completed</span>
+                    </td>
+                    <td>
+                      <button class="btn-outline btn-xs">View EHR</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>#T-102</strong></td>
+                    <td>Priya Patel</td>
+                    <td>28 / Female</td>
+                    <td>10:15 AM</td>
+                    <td>New Checkup</td>
+                    <td>
+                      <span class="badge-status completed">Completed</span>
+                    </td>
+                    <td>
+                      <button class="btn-outline btn-xs">View EHR</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>#T-103</strong></td>
+                    <td>Amit Deshmukh</td>
+                    <td>52 / Male</td>
+                    <td>11:00 AM</td>
+                    <td>ECG Review</td>
+                    <td>
+                      <span class="badge-status in-progress"
+                        >In Consultation</span
+                      >
+                    </td>
+                    <td>
+                      <button class="btn-primary btn-xs">Prescribe</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>#T-104</strong></td>
+                    <td>Sneha Kulkarni</td>
+                    <td>41 / Female</td>
+                    <td>11:45 AM</td>
+                    <td>Routine Care</td>
+                    <td><span class="badge-status waiting">Waiting</span></td>
+                    <td>
+                      <button class="btn-secondary btn-xs">Call Next</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 MedPulse Hospital Management System. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+      <a href="index.html" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="doctors.html">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Doctors</span>
+      </a>
+      <a href="services.html">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span>Services</span>
+      </a>
+      <a href="departments.html">
+        <i class="fa-solid fa-sitemap"></i>
+        <span>Depts</span>
+      </a>
+      <a href="contact.html">
+        <i class="fa-solid fa-headset"></i>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <!-- JS Script for Light/Dark Mode -->
+    <script src="javascript.js"></script>
+  </body>
+</html>
